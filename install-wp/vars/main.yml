@@ -3,7 +3,7 @@
 # vars file for install-wp
 
 http_port: 8080
-dbhost: db-server.local
+dbhost: 172.16.0.232
 dbport: 3306
 dbname: wp_db_prd
 dbuser: wp_user_01

@@ -2,7 +2,7 @@
 
 # vars file for install-db
 
-dbhost: db-server.local
+dbhost: 172.16.0.232
 dbport: 3306
 dbname: wp_db_prd
 dbuser: wp_user_01
