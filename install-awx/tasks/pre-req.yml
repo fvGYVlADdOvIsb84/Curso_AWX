@@ -30,7 +30,7 @@
 
 - name: Clonando o REPO
   git:
-    repo: "{{ git_repo }}"
+    repo: '{{ git_repo }}'
     dest: /tmp/awx
     force: yes
 
@@ -44,15 +44,15 @@
     path: /tmp/awx/installer/inventoryng
     block: |
       # Gerado Via Ansible
-      localhost ansible_connection=local ansible_python_interpreter="/usr/bin/env python3"
+      localhost ansible_connection=local ansible_python_interpreter='/usr/bin/env python3'
       [all:vars]
       dockerhub_base=ansible
       awx_task_hostname=awx
       awx_web_hostname=awxweb
-      postgres_data_dir="/files/aws/pgdocker"
+      postgres_data_dir='/files/aws/pgdocker'
       host_port=80
       host_port_ssl=443
-      docker_compose_dir="/files/aws/awxcompose"
+      docker_compose_dir='/files/aws/awxcompose'
       pg_username=awx
       pg_password=awxpass
       pg_database=awx

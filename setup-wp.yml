@@ -3,7 +3,6 @@
 - hosts: all
   become: yes
   roles:
-  - { role: install-wp, tags: ["install_wp"] }
+  - { role: install-wp, tags: ['install_wp'] }
 
 ...
-    
